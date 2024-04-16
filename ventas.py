@@ -83,5 +83,5 @@ df['otros'] =df['otros'].fillna(round(df['otros'].mean(),1))
 valores_nulos=df.isnull().sum()
 #print(valores_nulos)
 
-# Convertir a DataFrame
+# Convertir DataFrame a CSV 
 df.to_csv('ventas_totales_limpio.csv')
